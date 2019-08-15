@@ -62,6 +62,7 @@ li>a {
   margin: 0;
   padding: 0;
   font-size: 0;
+  padding-bottom: 70px;
 }
 
 img {
@@ -84,9 +85,10 @@ img {
 }
 
 .subtitle {
+  margin: 0;
+  margin-bottom: 26px;
   font-size: 14px;
   text-transform: uppercase;
-  margin-bottom: 26px;
   font-family: Ubuntu, sans-serif;
   font-weight: 300;
   line-height: 17px;
@@ -117,7 +119,7 @@ img {
   font-weight: 400;
   color: #626262;
   border: 1px solid;
-  margin: 52px 367px 70px;
+  margin: 52px 367px 0px;
   padding: 20px 34px;
   background: none;
   cursor: pointer;
