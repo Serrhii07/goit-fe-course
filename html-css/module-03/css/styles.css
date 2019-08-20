@@ -26,6 +26,10 @@ header {
   padding-bottom: 98px;
 }
 
+.categories li {
+  display: inline-block;
+}
+
 .categories {
   margin: 0;
 	padding: 0;
@@ -38,15 +42,12 @@ header {
   line-height: 24px;
 }
 
-.categories li {
-  display: inline-block;
-}
-
 li>a {
   display: block;
   padding: 0 51px;
   text-decoration: none;
-	text-transform: uppercase;
+  text-transform: uppercase;
+  color: #626262;
 } 
 
 .categories a:hover,
@@ -123,4 +124,9 @@ img {
   padding: 20px 34px;
   background: none;
   cursor: pointer;
+}
+
+.more:hover,
+.more:focus {
+  color: #03a9f4;
 }
