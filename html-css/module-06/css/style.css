@@ -1,0 +1,377 @@
+html {
+  box-sizing: border-box;
+}
+  
+  *, *::before, *::after {
+  box-sizing: inherit;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400&display=swap');
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/*HEADER*/
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #95e1d3;;
+}
+
+.page_nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+
+.navigation {
+  display: flex;
+  text-transform: uppercase;
+}
+
+.navigation li:not(:last-child) {
+  margin-right: 60px;
+}
+
+.navigation a {
+  position: relative;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #95e1d3;
+  transition: all 200ms linear;
+}
+
+.navigation a:hover::after {
+  position: absolute;
+  width: 100%;
+  content: '';
+  display: block;
+  border-bottom: 3px solid #f38181;
+  padding-top: 10px;
+  transition: .4s;
+}
+
+.navigation a:hover,
+.navigation a:focus {
+  color: #f38181;
+}
+
+/*MAIN*/
+/*SERVICES*/
+
+.main_content {
+  padding-top: 110px;
+}
+
+.section_header {
+  margin-bottom: 64px;
+}
+
+.section_header_intro {
+  font-family:'Kaushan Script', cursive;
+  font-size: 24px;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+}
+
+.section_header_title {
+  font-family:'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333;
+  text-align: center;
+}
+
+.section_header_title::after {
+  padding-top: 40px;
+  margin: auto;
+  width: 60px;
+  display: block;
+  content: '';
+  border-bottom: 3px solid #f38181;
+}
+
+.services_box {
+  padding-bottom: 90px;
+  width: 100%;
+}
+
+.services_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services_list_item {
+  flex-basis: 33%;
+  margin-bottom: 100px;
+}
+
+.services_list_item:nth-child(4),
+.services_list_item:nth-child(5),
+.services_list_item:nth-child(6) {
+    margin-bottom: 0;
+}
+
+.services_list_item::before {
+  content: '';
+  display: block;
+  height: 32px;
+  width: 32px;
+  float: left;
+  margin: 16px 30px 16px 0;
+}
+
+.services_list_item.alarm::before {
+  background-image: url(../img/icons/ALARM.png);
+}
+
+.services_list_item.graph::before {
+  background-image: url(../img/icons/GRAPH.png);
+}
+
+.services_list_item.comp::before {
+  background-image: url(../img/icons/COMPUTER.png);
+}
+
+.services_list_item.book::before {
+  background-image: url(../img/icons/BOOK.png);
+}
+
+.services_list_item.home::before {
+  background-image: url(../img/icons/HOME.png);
+}
+
+.services_list_item.digit::before {
+  background-image: url(../img/icons/IMAGE.png);
+}
+
+.service_name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.service_info {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: normal;
+  color: #999;
+}
+
+/*TEAM*/
+
+.section_header_info {
+  width: 64%;
+  text-align: center;
+  margin: 40px auto 0px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: normal;
+  color: #999;
+}
+
+.team_list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.team_card {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 28px;
+}
+
+.social_networks {
+  padding-left: 0;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  visibility: hidden;
+}
+
+.social_button {
+  display: block;
+  width: 56px;
+  height: 56px;
+  margin-right: 1px;
+  background-color: #fce38a;
+}
+
+.facebook_button {
+  background-image: url(../img/icons/facebook.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.twitter_button {
+  background-image: url(../img/icons/twitter.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pinterest_button {
+  background-image: url(../img/icons/pinterest.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.instagram_button {
+  background-image: url(../img/icons/instagram.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.team_card:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px #95e1d3;
+  transition: all 200ms linear;
+}
+
+.team_card:hover .social_button:hover {
+  background-color: #95e1d3
+}
+
+.team_card:hover .social_networks {
+  visibility: visible;
+}
+
+.team_card:hover::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138, 0.9) 0%, rgb(243,129,129, 0.9) 100%);
+  width: 380px;
+  height: 470px;
+}
+
+.team_name {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.team_position {
+  margin: 10px 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #999;
+  text-align: center;
+  font-style: italic;
+}
+
+.team {
+  padding-bottom: 80px;
+}
+
+/*FOOTER*/
+
+.footer_content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #e5e5e5;
+  min-height: 62px;
+}
+
+.footer_info {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+}
+
+.footer_info a {
+  color: #f38181;
+  transition: all 200ms linear;
+}
+
+a.author:hover,
+a.author:focus {
+  color: #f7baba;
+}
+
+.subscribe_container input {
+  border: 1px solid #e5e5e5;
+  width: 230px;
+  padding: 10px;
+}
+
+.subscribe_container button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  width: 150px;
+  border: none;
+  background-color: #95e1d3;
+  padding: 12px;
+  transition: all 200ms linear;
+}
+
+.subscribe_container button:hover {
+  background-color: #f38181;
+}
+
+.subscribe_container form {
+  display: inline-flex;
+}
+
+input::-webkit-input-placeholder { 
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #ccc;
+  font-style: italic;
+}
+
+input {
+  outline:none;
+}
