@@ -6,8 +6,6 @@ html {
   box-sizing: inherit;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400&display=swap');
-
 .container {
   width: 100%;
   max-width: 1200px;
@@ -50,6 +48,7 @@ a {
 }
 
 .navigation {
+  margin: 0;
   display: flex;
   text-transform: uppercase;
 }
@@ -75,7 +74,6 @@ a {
   display: block;
   border-bottom: 3px solid #f38181;
   padding-top: 10px;
-  transition: .4s;
 }
 
 .navigation a:hover,
@@ -95,6 +93,7 @@ a {
 }
 
 .section_header_intro {
+  margin: 0;
   font-family:'Kaushan Script', cursive;
   font-size: 24px;
   font-weight: 400;
@@ -103,6 +102,8 @@ a {
 }
 
 .section_header_title {
+  margin: 0;
+  margin-top: 16px;
   font-family:'Montserrat', sans-serif;
   font-size: 30px;
   font-weight: 700;
@@ -148,7 +149,7 @@ a {
   height: 32px;
   width: 32px;
   float: left;
-  margin: 16px 30px 16px 0;
+  margin: 3px 30px 16px 0;
 }
 
 .services_list_item.alarm::before {
@@ -176,6 +177,7 @@ a {
 }
 
 .service_name {
+  margin: 0;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -184,6 +186,8 @@ a {
 }
 
 .service_info {
+  margin: 0;
+  margin-top: 16px;
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -194,6 +198,7 @@ a {
 /*TEAM*/
 
 .section_header_info {
+  margin: 0;
   width: 64%;
   text-align: center;
   margin: 40px auto 0px;
@@ -215,6 +220,7 @@ a {
   position: relative;
   cursor: pointer;
   margin-bottom: 28px;
+  transition: all 200ms linear;
 }
 
 .social_networks {
@@ -263,7 +269,6 @@ a {
 .team_card:hover {
   transform: translate(-10px, -10px);
   box-shadow: 10px 10px #95e1d3;
-  transition: all 200ms linear;
 }
 
 .team_card:hover .social_button:hover {
@@ -296,7 +301,8 @@ a {
 }
 
 .team_position {
-  margin: 10px 0;
+  margin: 0;
+  margin-top: 10px;
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
   font-weight: 300;
@@ -321,10 +327,17 @@ a {
 }
 
 .footer_info {
+  display: inline-flex;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #333;
+}
+
+.footer_info p {
+  margin: 0;
+  display: inline-block;
+  margin-right: 4px;
 }
 
 .footer_info a {
