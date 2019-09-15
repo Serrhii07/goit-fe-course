@@ -44,7 +44,7 @@
     margin: 0 auto;
     padding: 20px 0 140px 0;
     position: relative;
-    background-image: url(/img/Vector\ Smart\ Object.jpg);
+    background-image: url(../img/Vector\ Smart\ Object.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -202,7 +202,7 @@
     right: 0;
     display: block;
     content: '';
-    background-image: url(/img/icon_tv.png);
+    background-image: url(../img/icon_tv.png);
     background-position: center;
     background-repeat: no-repeat;
     background-color: #ff4e50;
@@ -218,7 +218,7 @@
     right: 0;
     display: block;
     content: '';
-    background-image: url(/img/icon_cup.png);
+    background-image: url(../img/icon_cup.png);
     background-position: center;
     background-repeat: no-repeat;
     background-color: #1cd7ad;
@@ -234,7 +234,7 @@
     right: 0;
     display: block;
     content: '';
-    background-image: url(/img/icon_bottle.png);
+    background-image: url(../img/icon_bottle.png);
     background-position: center;
     background-repeat: no-repeat;
     background-color: #ffa507;
@@ -250,7 +250,7 @@
     right: 0;
     display: block;
     content: '';
-    background-image: url(/img/icon_message.png);
+    background-image: url(../img/icon_message.png);
     background-position: center;
     background-repeat: no-repeat;
     background-color: #4e73db;
