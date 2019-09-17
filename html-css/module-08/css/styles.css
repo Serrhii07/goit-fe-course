@@ -13,6 +13,7 @@
     font-weight: 300;
     font-size: 14px;
     color: #666;
+    line-height: normal;
   }
 
   img {
@@ -27,6 +28,7 @@
   }
 
   .partners_list {
+    margin: 0;
     list-style: none;
   }
 
@@ -34,14 +36,21 @@
     padding-left: 0;
   }
 
+  h1, h2, h3, p {
+  margin: 0;
+  }
+
   .btn {
     outline: none;
   }
 
+  .container {
+  width: 100%;
+  margin: 0 auto;
+  }
+
   .promo {
-    width: 100%;
     min-width: 320px;
-    margin: 0 auto;
     padding: 20px 0 140px 0;
     position: relative;
     background-image: url(../img/Vector\ Smart\ Object.jpg);
@@ -106,18 +115,19 @@
   }
 
   .head_btns {
-    margin-bottom: 115px;
+    margin: 0;
   }
 
   .logo {
+    margin-top: 115px;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 700;
     color: #fff;
-    margin-bottom: 40px;
   }
 
   .promo_block {
+    margin-top: 40px;
     z-index: 2;
     position: relative;
     display: flex;
@@ -175,19 +185,20 @@
     font-weight: 700;
     color: #333;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .partners_list {
+    margin-bottom: 0;
     display: flex;
     flex-flow: column wrap;
   }
 
   .partners_list_item {
+    margin: 0 auto;
     max-width: 230px;
     text-align: center;
     margin-bottom: 30px;
-    padding: 15px;
   }
 
   .partner_pic {
@@ -269,6 +280,8 @@
   }
 
   .partners_btn {
+    display: block;
+    margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 700;
@@ -286,20 +299,28 @@
     background-color: #ff4e50;
   }
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 768px) {
     .promo {
-      width: 100%;
-      max-width: 768px;
       padding: 50px 0 235px 0;
   }
 
+  .container {
+    width: 674px;
+  }
+  
   .page_header {
     flex-flow: row; 
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 48px;
-    margin-right: 48px;
   }
+
+.logo {
+  margin-top: 0;
+}
+
+.promo_block {
+  margin-top: 160px;
+}
 
   .promo_title {
     font-size: 52px;
@@ -319,26 +340,38 @@
     padding: 60px 0;
   }
 
+  .partners_title {
+  margin-bottom: 30px;
+  }
+
   .partners_list {
+    margin-bottom: 40px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    max-width: 600px;
+  }
+
+  .partners_list_item {
+    margin: 0;
+    margin-bottom: 55px;
+  }
+
+  .partners_list_item:nth-child(3), 
+  .partners_list_item:nth-child(4) {
+    margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 940px) {
-  .promo {
-    width: 100%;
-    max-width: 1440px;
+.container {
+    width: 920px;
   }
 
   .partners_list {
     max-width: 100%;
   }
 
-  .page_header {
-    margin-left: 248px;
-    margin-right: 248px;
+  .partners_list_item {
+    margin: 0;
   }
 }
