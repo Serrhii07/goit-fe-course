@@ -544,6 +544,6 @@ a {
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
 .banner {
-  background-image: url(/img/background@2x.jpg);
+  background-image: url(../img/background@2x.jpg);
 }
 }
