@@ -69,7 +69,7 @@ a {
 /*HEADER*/
 
 .banner {
-  background-image: url(/img/background.jpg);
+  background-image: url(../img/background.jpg);
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
