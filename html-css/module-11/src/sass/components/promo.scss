@@ -1,0 +1,24 @@
+/*PROMO*/
+.promo {
+  padding-top: 152px;
+  padding-bottom: 224px;
+  max-width: 832px;
+  margin: 0 auto;
+  text-align: center;
+  color: $white;
+}
+
+.promo__text {
+  font-size: 72px;
+  margin-bottom: 32px;
+  font-family: $kaushan;
+  font-weight: 400;
+}
+
+.promo__header {
+  font-size: 150px;
+  font-weight: 700;
+  font-family: $montserrat;
+  text-transform: uppercase;
+  margin-bottom: 94px;
+}

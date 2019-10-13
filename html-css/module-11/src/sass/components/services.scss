@@ -1,0 +1,114 @@
+/*SERVICES*/
+.main_content {
+  padding-top: 46px;
+}
+
+.services__section_header {
+  margin-bottom: 64px;
+}
+
+.services__text,
+.team__text {
+  margin: 0;
+  font-family: $kaushan;
+  font-size: 24px;
+  font-weight: 400;
+  color: $grey;
+  text-align: center;
+}
+
+.services__title,
+.team__title {
+  margin: 0;
+  margin-top: 16px;
+  font-family: $montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $grey;
+  text-align: center;
+}
+
+.services__section_header::after,
+.team__section_header::after {
+  padding-top: 40px;
+  margin: auto;
+  width: 60px;
+  display: block;
+  content: "";
+  border-bottom: 3px solid $pink;
+}
+
+.services__box {
+  padding-bottom: 90px;
+  max-width: 1140px;
+}
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services__item {
+  flex-basis: 33%;
+  margin-bottom: 100px;
+}
+
+.services__item:nth-child(4),
+.services__item:nth-child(5),
+.services__item:nth-child(6) {
+  margin-bottom: 0;
+}
+
+.services__item::before {
+  content: "";
+  display: block;
+  height: 32px;
+  width: 32px;
+  float: left;
+  margin: 3px 30px 16px 0;
+}
+
+.services__item.alarm::before {
+  background-image: url(../images/icons/ALARM.png);
+}
+
+.services__item.graph::before {
+  background-image: url(../images/icons/GRAPH.png);
+}
+
+.services__item.comp::before {
+  background-image: url(../images/icons/COMPUTER.png);
+}
+
+.services__item.book::before {
+  background-image: url(../images/icons/BOOK.png);
+}
+
+.services__item.home::before {
+  background-image: url(../images/icons/HOME.png);
+}
+
+.services__item.digit::before {
+  background-image: url(../images/icons/IMAGE.png);
+}
+
+.services__name {
+  margin: 0;
+  font-family: $montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  color: $grey;
+  text-transform: uppercase;
+}
+
+.services__info {
+  margin: 0;
+  margin-top: 16px;
+  font-family: $roboto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: normal;
+  color: $light-grey;
+}

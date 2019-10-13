@@ -1,0 +1,76 @@
+/*HEADER*/
+.banner {
+  background-image: url(../images/background.jpg);
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .banner {
+      background-image: url(../images/background@2x.jpg);
+    }
+  }
+}
+
+.page_nav__link,
+.page_nav__logo {
+  color: $white;
+  font-family: $montserrat;
+}
+
+.page_nav__logo {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.page_nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page_nav__navigation {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.page_nav__navigation li:not(:last-child) {
+  margin-right: 60px;
+}
+
+.page_nav__item {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  transition: all 200ms linear;
+}
+
+.page_nav__link {
+  &:hover,
+  &:focus {
+    color: $yellow;
+  }
+
+  &:hover::after {
+    position: absolute;
+    width: 100%;
+    content: "";
+    display: block;
+    border-bottom: 3px solid $yellow;
+    padding-top: 10px;
+  }
+}
+
+.page_nav__svg {
+  fill: $white;
+
+  .&:hover,
+  .&:focus {
+    fill: $yellow;
+  }
+}

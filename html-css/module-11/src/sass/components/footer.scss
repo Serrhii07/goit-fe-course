@@ -1,0 +1,55 @@
+/*FOOTER*/
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid $footer-line-color;
+  min-height: 62px;
+}
+
+.footer__footer_info {
+  display: inline-flex;
+  font-family: $montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  color: $grey;
+}
+
+.footer__text {
+  margin: 0;
+  display: inline-block;
+}
+
+.footer__author {
+  margin-left: 4px;
+  color: $pink;
+  transition: all 200ms linear;
+
+  &:hover,
+  &:focus {
+    color: $lite-pink;
+  }
+}
+
+.footer__input {
+  border: 1px solid $footer-line-color;
+  width: 230px;
+  padding: 10px;
+}
+
+.footer__form {
+  display: inline-flex;
+}
+
+.footer__input::placeholder {
+  font-family: $roboto;
+  font-size: 15px;
+  font-weight: 300;
+  color: $placeholder-color;
+  font-style: italic;
+}
+
+.footer__input {
+  outline: none;
+}

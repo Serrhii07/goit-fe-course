@@ -1,0 +1,26 @@
+/*
+   Import partials below
+*/
+@import "./variables.scss";
+
+@import "./normalize";
+
+@import "./base.scss";
+
+/*HEADER*/
+@import "./components/header.scss";
+
+/*PROMO*/
+@import "./components/promo.scss";
+
+/*BUTTONS*/
+@import "./components/buttons.scss";
+
+/*SERVICES*/
+@import "./components/services.scss";
+
+/*TEAM*/
+@import "./components/team.scss";
+
+/*FOOTER*/
+@import "./components/footer.scss";

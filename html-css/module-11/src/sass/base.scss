@@ -1,0 +1,38 @@
+/*BASE*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+ul {
+  padding-left: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}

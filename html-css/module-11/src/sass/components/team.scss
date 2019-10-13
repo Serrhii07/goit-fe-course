@@ -1,0 +1,114 @@
+/*TEAM*/
+.team__section_header {
+  margin-bottom: 50px;
+}
+
+.team__info_container {
+  margin-bottom: 74px;
+}
+
+.team__info {
+  margin: 0;
+  width: 64%;
+  text-align: center;
+  margin: 40px auto 0px;
+  font-family: $roboto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: normal;
+  color: $light-grey;
+}
+
+.team__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.team__card {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 28px;
+  transition: all 200ms linear;
+
+  &:hover {
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px $blue;
+  }
+
+  &:hover .team__social_btn {
+    visibility: visible;
+  }
+
+  &:hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient( 90deg, rgba(252,227,138, 0.9) 0%, rgba(243,129,129, 0.9) 100%);
+    width: 380px;
+    height: 470px;
+  }
+}
+
+.team__socials {
+  padding-left: 0;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  visibility: hidden;
+}
+
+.team__social_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  margin-right: 1px;
+  background-color: $yellow;
+
+  &:hover {
+    background-color: $pink;
+  }
+
+  &:hover .team__svg {
+    fill: $white;
+  }
+}
+
+.team__svg {
+  display: inline-block;
+  fill: $pink;
+  transition: fill 0.2s linear;
+}
+
+.team__mate_name {
+  margin: 0;
+  font-family: $montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  color: $grey;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.team__mate_position {
+  margin: 0;
+  margin-top: 10px;
+  font-family: $roboto;
+  font-size: 15px;
+  font-weight: 300;
+  color: $light-grey;
+  text-align: center;
+  font-style: italic;
+}
+
+.team {
+  padding-bottom: 80px;
+}
